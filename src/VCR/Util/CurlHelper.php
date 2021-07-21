@@ -115,6 +115,7 @@ class CurlHelper
                 break;
             case CURLINFO_APPCONNECT_TIME:
                 $info = '';
+                break;
             default:
                 $info = $response->getCurlInfo(self::$curlInfoList[$option]);
                 break;
